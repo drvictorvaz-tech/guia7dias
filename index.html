@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>7 Dias Sem Dor e Sem Inchaço — Dr. Victor Vaz</title>
-<meta name="description" content="O protocolo clínico anti-inflamatório do Dr. Victor Vaz que elimina dor e inchaço em 7 dias: alimentação, sono, suplementação e movimento. Acesso imediato.">
+<meta name="description" content="O protocolo clínico anti-inflamatório do Dr. Victor Vaz que elimina dor e inchaço em 7 dias: alimentação, sono, suplementação e movimento. Bônus grátis: e-book Receitas Saudáveis e Nutritivas. Acesso imediato.">
 <meta name="facebook-domain-verification" content="3nlmmr1h07xpdwgpewqo667vjh8j84" />
 
 <style>
@@ -59,6 +59,8 @@ img{max-width:100%; display:block}
 .hero .sub{font-size:19px; color:var(--text); margin-bottom:30px; max-width:560px}
 .hero .trust{display:flex; flex-wrap:wrap; gap:16px; margin-top:22px; font-size:13px; color:var(--muted); font-weight:600}
 .hero .trust b{color:var(--navy)}
+.hero .bonus-flag{display:inline-flex; align-items:center; gap:8px; background:rgba(62,124,90,.12); border:1px solid rgba(62,124,90,.35);
+  color:var(--green); font-weight:800; font-size:13px; padding:9px 16px; border-radius:30px; margin-top:18px}
 
 /* MOCKUP CAPA */
 .cover-stage{display:flex; justify-content:center; perspective:1200px}
@@ -150,6 +152,22 @@ section{padding:64px 0}
 .autor-card .cargo{color:var(--gold-d); font-weight:800; font-size:14px; margin-bottom:14px}
 .autor-card p{font-size:15px; color:var(--text)}
 
+/* BÔNUS REAL (novo) */
+.bonus-real-sec{background:var(--white)}
+.bonus-real-grid{display:grid; grid-template-columns:.82fr 1.18fr; gap:48px; align-items:center; max-width:980px; margin:0 auto}
+.bonus-real-cover{display:flex; justify-content:center}
+.bonus-real-cover img{width:280px; max-width:78vw; border-radius:16px; box-shadow:0 26px 55px rgba(20,33,61,.2); border:1px solid var(--line)}
+.bonus-free-tag{display:inline-flex; align-items:center; gap:7px; background:var(--green); color:#fff; font-weight:800; font-size:12px;
+  letter-spacing:1.5px; text-transform:uppercase; padding:8px 18px; border-radius:30px; margin-bottom:18px}
+.bonus-real-txt h2{font-size:clamp(24px,3vw,32px); margin-bottom:14px}
+.bonus-real-txt > p{font-size:16px; color:var(--text); margin-bottom:20px}
+.bonus-real-txt ul{list-style:none; display:flex; flex-direction:column; gap:12px; margin-bottom:22px}
+.bonus-real-txt li{font-size:15px; color:var(--text); padding-left:28px; position:relative}
+.bonus-real-txt li::before{content:"✓"; position:absolute; left:0; color:var(--green); font-weight:900; font-size:16px}
+.bonus-value{font-size:14.5px; color:var(--muted); margin-bottom:22px}
+.bonus-value s{margin-right:8px}
+.bonus-value b{color:var(--gold-d); font-size:16px}
+
 /* PREÇO */
 .preco-card{max-width:520px; margin:0 auto; background:var(--white); border:2px solid var(--gold);
   border-radius:26px; padding:46px 34px; text-align:center; box-shadow:0 20px 50px rgba(168,130,47,.18)}
@@ -163,10 +181,12 @@ section{padding:64px 0}
 .incl-mini{text-align:left; max-width:400px; margin:0 auto 26px; display:flex; flex-direction:column; gap:9px}
 .incl-mini li{list-style:none; font-size:14px; color:var(--text); padding-left:26px; position:relative}
 .incl-mini li::before{content:"✓"; position:absolute; left:0; color:var(--green); font-weight:900}
+.incl-mini li.bonus-line{font-weight:800; color:var(--navy)}
+.incl-mini li.bonus-line::before{content:"🎁"; font-size:13px}
 .selos{display:flex; justify-content:center; flex-wrap:wrap; gap:18px; margin-top:22px; font-size:12.5px; color:var(--muted); font-weight:600}
 .selos span{display:flex; align-items:center; gap:6px}
 
-/* 5 GUIAS BÔNUS (order bumps) — estilo Código Divino */
+/* GUIAS BÔNUS (order bumps) */
 .bonus-dark{background:radial-gradient(130% 100% at 50% -12%, #294a7d 0%, #16264a 44%, #0b1226 100%); position:relative; overflow:hidden}
 .bonus-dark .sec-head h2{color:#fff}
 .bonus-dark .sec-head p{color:#bcc9df}
@@ -224,6 +244,8 @@ footer a{color:var(--gold)}
   .checklist,.incl-list,.food-cols{grid-template-columns:1fr}
   .autor-card{grid-template-columns:1fr; text-align:center}
   .autor-av{margin:0 auto}
+  .bonus-real-grid{grid-template-columns:1fr; text-align:center}
+  .bonus-real-txt ul{text-align:left}
 }
 </style>
 <!-- Meta Pixel Code -->
@@ -261,6 +283,7 @@ src="https://www.facebook.com/tr?id=1257035366251404&ev=PageView&noscript=1"/></
           <div>⚡ <b>Resultados</b> em 7 dias</div>
           <div>🔒 <b>Compra</b> 100% segura</div>
         </div>
+        <div class="bonus-flag">🎁 Bônus grátis hoje: e-book Receitas Saudáveis e Nutritivas</div>
       </div>
       <div class="cover-stage">
         <div class="cover">
@@ -428,8 +451,31 @@ src="https://www.facebook.com/tr?id=1257035366251404&ev=PageView&noscript=1"/></
   </div>
 </section>
 
+<!-- BÔNUS REAL: RECEITAS SAUDÁVEIS -->
+<section class="alt bonus-real-sec">
+  <div class="wrap">
+    <div class="bonus-real-grid">
+      <div class="bonus-real-cover">
+        <img src="https://drvictorvaz.com.br/wp-content/uploads/2026/09/receitas-saudaveis-bonus.jpg" alt="Capa do e-book bônus Receitas Saudáveis e Nutritivas - Dr. Victor Vaz" loading="lazy" width="700" height="1254">
+      </div>
+      <div class="bonus-real-txt">
+        <span class="bonus-free-tag">🎁 Bônus exclusivo · Grátis hoje</span>
+        <h2>De brinde: o e-book Receitas Saudáveis e Nutritivas</h2>
+        <p>Quem garante o Protocolo 7 Dias Sem Dor hoje leva também, sem custo extra, o guia completo de receitas anti-inflamatórias do Dr. Victor Vaz — para continuar sem dor muito depois do 7º dia.</p>
+        <ul>
+          <li>Receitas anti-inflamatórias saborosas (sem glúten/lactose)</li>
+          <li>Estratégias práticas para controle de DTM e dor orofacial</li>
+          <li>Apoio nutricional integrativo para o seu bem-estar diário</li>
+        </ul>
+        <p class="bonus-value"><s>De R$ 47,90</s> <b>Grátis para quem compra hoje</b></p>
+        <a href="https://pay.kiwify.com.br/Kyn1SRD" class="btn">Quero o guia + o bônus grátis →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PREÇO -->
-<section class="alt" id="comprar">
+<section id="comprar">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Comece hoje</div>
@@ -441,6 +487,7 @@ src="https://www.facebook.com/tr?id=1257035366251404&ev=PageView&noscript=1"/></
       <div class="preco-por"><span class="cifra">R$</span>79<span class="cents">,90</span></div>
       <p class="preco-desc">Pagamento único · Acesso imediato · PDF completo</p>
       <ul class="incl-mini">
+        <li class="bonus-line">Bônus grátis: e-book Receitas Saudáveis e Nutritivas</li>
         <li>Protocolo completo dos 7 dias, dia a dia</li>
         <li>Lista de alimentos proibidos e permitidos</li>
         <li>Protocolo da água com magnésio</li>
@@ -449,7 +496,7 @@ src="https://www.facebook.com/tr?id=1257035366251404&ev=PageView&noscript=1"/></
         <li>Exercícios para quem tem dor crônica</li>
         <li>Checklist diário imprimível + glossário</li>
       </ul>
-      <a href="https://pay.kiwify.com.br/Kyn1SRD" class="btn" style="width:100%">📥 Quero o Guia Agora</a>
+      <a href="https://pay.kiwify.com.br/Kyn1SRD" class="btn" style="width:100%">📥 Quero o Guia + Bônus Agora</a>
       <div class="selos">
         <span>🔒 Compra segura</span>
         <span>📩 Entrega no e-mail</span>
@@ -459,16 +506,15 @@ src="https://www.facebook.com/tr?id=1257035366251404&ev=PageView&noscript=1"/></
   </div>
 </section>
 
-<!-- COMPLEMENTOS / ORDER BUMPS (estilo Código Divino) -->
+<!-- COMPLEMENTOS / ORDER BUMPS -->
 <section class="dark bonus-dark">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow" style="color:var(--gold)">5 Guias Complementares</div>
+      <div class="eyebrow" style="color:var(--gold)">4 Guias Complementares</div>
       <h2>Turbine seus resultados no checkout</h2>
-      <p>Na hora de finalizar a compra, você pode adicionar — com um clique — estes 5 guias que aprofundam e potencializam o protocolo.</p>
+      <p>Na hora de finalizar a compra, você pode adicionar — com um clique — estes 4 guias que aprofundam e potencializam o protocolo.</p>
     </div>
     <div class="bonus-shelf">
-      <div class="mcover"><div class="mk">Complemento</div><div class="mi">🥗</div><div class="mt">Receitas Saudáveis e Nutritivas</div><div class="mstars">★★★★★</div></div>
       <div class="mcover"><div class="mk">Complemento</div><div class="mi">🚨</div><div class="mt">Protocolo SOS — Crises de Dor</div><div class="mstars">★★★★★</div></div>
       <div class="mcover"><div class="mk">Complemento</div><div class="mi">🧘</div><div class="mt">Guia de Mobilidade Integrativa</div><div class="mstars">★★★★★</div></div>
       <div class="mcover"><div class="mk">Complemento</div><div class="mi">☕</div><div class="mt">Libertação — Café e Açúcar</div><div class="mstars">★★★★★</div></div>
@@ -476,7 +522,7 @@ src="https://www.facebook.com/tr?id=1257035366251404&ev=PageView&noscript=1"/></
     </div>
     <p class="bonus-price"><s>De R$ 79,90 cada</s> <b>por R$ 39,90</b> no checkout</p>
     <div class="center-cta">
-      <a href="https://pay.kiwify.com.br/Kyn1SRD" class="btn">Quero o guia + os 5 complementos →</a>
+      <a href="https://pay.kiwify.com.br/Kyn1SRD" class="btn">Quero o guia + os complementos →</a>
     </div>
   </div>
 </section>
@@ -501,8 +547,8 @@ src="https://www.facebook.com/tr?id=1257035366251404&ev=PageView&noscript=1"/></
     </div>
     <div class="faq">
       <details open>
-        <summary>Como recebo o guia depois da compra? <span class="plus">+</span></summary>
-        <p>O acesso é imediato. Assim que o pagamento é confirmado, você recebe o guia completo em PDF no seu e-mail e também na área de membros da Kiwify. Pode ler no celular, tablet ou computador.</p>
+        <summary>Como recebo o guia e o bônus depois da compra? <span class="plus">+</span></summary>
+        <p>O acesso é imediato. Assim que o pagamento é confirmado, você recebe o guia completo e o e-book bônus Receitas Saudáveis e Nutritivas em PDF no seu e-mail e também na área de membros da Kiwify. Pode ler no celular, tablet ou computador.</p>
       </details>
       <details>
         <summary>Preciso ter algum conhecimento prévio? <span class="plus">+</span></summary>
@@ -532,9 +578,9 @@ src="https://www.facebook.com/tr?id=1257035366251404&ev=PageView&noscript=1"/></
 <section class="dark final-cta">
   <div class="wrap narrow">
     <h2>Sua próxima semana pode ser sem dor</h2>
-    <p>Você já tentou de tudo para o sintoma. Que tal, pela primeira vez, tratar a causa? Comece o protocolo hoje.</p>
+    <p>Você já tentou de tudo para o sintoma. Que tal, pela primeira vez, tratar a causa? Comece o protocolo hoje e leve de bônus o e-book Receitas Saudáveis e Nutritivas.</p>
     <a href="https://pay.kiwify.com.br/Kyn1SRD" class="btn">Quero começar agora por R$ 79,90 →</a>
-    <div style="margin-top:16px; font-size:13px; color:#8a97ad">🛡️ Garantia de 7 dias · Acesso imediato</div>
+    <div style="margin-top:16px; font-size:13px; color:#8a97ad">🛡️ Garantia de 7 dias · Acesso imediato · 🎁 Bônus grátis incluso</div>
   </div>
 </section>
 
